@@ -2,7 +2,7 @@
 	"name": "SQL script 1",
 	"properties": {
 		"content": {
-			"query": "-- This is auto-generated code\nSELECT\n    Category,COUNT(*) AS ProductCount\nFROM\n    OPENROWSET(\n        BULK 'https://dssvandatalake.dfs.core.windows.net/synapse-files/products.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0',\n        HEADER_ROW =TRUE\n    ) AS [result]\n    GROUP BY Category;\n--sandeep2\n",
+			"query": "-- This is auto-generated code\nSELECT\n    Category,COUNT(*) AS ProductCount\nFROM\n    OPENROWSET(\n        BULK 'https://dssvandatalake.dfs.core.windows.net/synapse-files/products.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0',\n        HEADER_ROW =TRUE\n    ) AS [result]\n    GROUP BY Category;\n--vandana\n--sandeep2\n",
 			"metadata": {
 				"language": "sql"
 			},
